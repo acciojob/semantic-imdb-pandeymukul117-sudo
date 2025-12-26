@@ -1,93 +1,122 @@
+<think>
+First, the user wants an HTML document for my favorite movie. I need to pick one. Let's say my favorite movie is "The Shawshank Redemption" because it's a classic.
+
+
+## Choosing a Favorite Movie  
+- The user requested an HTML document for my favorite movie.  
+- Decided on "The Shawshank Redemption" as it's a classic and well-regarded film.
+</think>```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Favorite Movie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shawshank Redemption - Movie Page</title>
     <style>
         body {
-            font-family: Verdana, sans-serif;
-            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-        header, nav, section, aside, footer {
-            background-color: #ffffff;
-            margin: 10px;
-            padding: 15px;
-            border-radius: 5px;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #2d3436;
+            background-color: #2c3e50;
             color: white;
             text-align: center;
+            padding: 20px;
+            font-size: 2em;
         }
         nav {
-            background-color: #636e72;
+            background-color: #34495e;
+            padding: 10px;
             text-align: center;
         }
         nav a {
             color: white;
-            margin: 0 10px;
             text-decoration: none;
+            margin: 0 15px;
             font-weight: bold;
         }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #summary {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #actor, #quote {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        aside {
+            background-color: #ecf0f1;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 8px;
+            float: right;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
         footer {
-            background-color: #2d3436;
+            background-color: #2c3e50;
             color: white;
             text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>3 Idiots</h1>
-    <p>An inspiring movie about life, friendship, and education</p>
-</header>
-
-<nav>
-    <p>Use the links below to explore the movie:</p>
-    <a href="#actor" id="nav-actor">Actors</a>
-    <a href="#quote" id="nav-quote">Quotes</a>
-</nav>
-
-<section id="summary">
-    <h2>Summary</h2>
-    <p>
-        3 Idiots is a Bollywood movie that follows the lives of three engineering students.
-        It shows the pressure of studies, the importance of friendship, and the courage
-        to follow one's passion instead of blindly chasing success.
-    </p>
-</section>
-
-<section id="actor">
-    <h2>Actors</h2>
-    <p>
-        The movie stars Aamir Khan as Rancho, R. Madhavan as Farhan,
-        and Sharman Joshi as Raju. Their performances made the movie
-        entertaining and meaningful.
-    </p>
-</section>
-
-<section id="quote">
-    <h2>Favorite Quote</h2>
-    <p>
-        “All is well” — This quote teaches us to stay calm and positive
-        even when life becomes difficult.
-    </p>
-</section>
-
-<aside>
-    <h2>Movie Details</h2>
-    <p>
-        IMDb Rating: 8.4/10 <br>
-        Release Date: 25 December 2009
-    </p>
-</aside>
-
-<footer>
-    <p>Produced by: Vidhu Vinod Chopra</p>
-</footer>
-
+    <div class="container">
+        <header>
+            The Shawshank Redemption
+        </header>
+        
+        <nav>
+            <a href="#actor" id="nav-actor">Actors</a>
+            <a href="#quote" id="nav-quote">Quotes</a>
+        </nav>
+        
+        <section id="summary">
+            <h2>Plot Summary</h2>
+            <p>Andy Dufresne, a banker convicted of murdering his wife and her lover, is sentenced to life in Shawshank Prison. Over the years, he forms an unlikely friendship with fellow inmate Red, and through his intelligence and hope, he finds ways to cope with the harsh realities of prison life, ultimately seeking redemption and freedom.</p>
+        </section>
+        
+        <aside>
+            <h3>Movie Info</h3>
+            <p><strong>IMDb Rating:</strong> 9.3/10</p>
+            <p><strong>Release Date:</strong> September 23, 1994</p>
+        </aside>
+        
+        <section id="actor">
+            <h2>Actors</h2>
+            <p><strong>Tim Robbins</strong> as Andy Dufresne: A quiet, intelligent banker who adapts to prison life with resilience.</p>
+            <p><strong>Morgan Freeman</strong> as Ellis "Red" Redding: A long-time inmate who becomes Andy's closest friend and narrator of the story.</p>
+            <p><strong>Bob Gunton</strong> as Warden Norton: The strict and corrupt warden of Shawshank Prison.</p>
+        </section>
+        
+        <section id="quote">
+            <h2>Favorite Quote</h2>
+            <blockquote>
+                "Hope is a good thing, maybe the best of things, and no good thing ever dies." - Ellis "Red" Redding
+            </blockquote>
+            <p>This quote encapsulates the film's theme of hope and redemption, delivered powerfully by Morgan Freeman.</p>
+        </section>
+        
+        <footer>
+            Produced by: Niki Marvin
+        </footer>
+    </div>
 </body>
 </html>
